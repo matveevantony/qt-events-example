@@ -14,6 +14,9 @@ class MainWindow : public QMainWindow
 private:
     QPushButton* btn;
     AnotherWindow* otherWin;
+    bool moveButton(int key);
+protected:
+    bool eventFilter(QObject *watched, QEvent *event) override;
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     void closeEvent(QCloseEvent *event) override;

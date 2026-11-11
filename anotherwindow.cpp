@@ -10,7 +10,7 @@ AnotherWindow::AnotherWindow(QWidget *parent)
     setFixedSize(400, 400);
     setWindowTitle("Второе окно");
 
-    QLabel* lbl = new QLabel("Немного текста");
+    QLabel* lbl = new QLabel("Немного текста", this);
     lbl->setGeometry(0, 0, 400, 400);
     lbl->setAlignment(Qt::AlignCenter);
 }
